@@ -16,9 +16,8 @@
             <div>
             <img src="https://cdn.discordapp.com/avatars/928823172168568832/a_e1a719753b6d86bbd2ced1ad2c12890b.gif?size=2048" alt="Sticky SAD">
         </div>
-                <h1>VkHypado</h1>
 
-                <h2>VkHypado | DEV</h2>
+                <h2 class="h2-name">VkHypado | DEV</h2>
 
                 <div>
                     <div data-aos="zoom-in" data-aos-duration="1500">
@@ -53,6 +52,15 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+                function typeWritter(texto,idElemento,tempo){
+                var char = texto.split('').reverse();
+                var typer = setInterval(function () {
+                    if (!char.length) return clearInterval(typer);
+                    var next = char.pop();
+                    document.getElementById(idElemento).innerHTML += next;
+                }, tempo);
+            }
+            typeWritter('kHypado','h2-name',500)
 AOS.init();
 </script>
 </body>
