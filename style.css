@@ -10,7 +10,8 @@ body{
 background-color: #0f0f0f;
 }
 
-.h2-name{
+#h2-name {
+animation: 2s step-end 0s infinite blink-caret;
 font-size:13px;
 color: white;
 }
